@@ -3,7 +3,7 @@ CREATE DATABASE db_links;
 USE db_links;
 
 -- TABLE USER
--- all pasword wil be encrypted using SHA1
+-- pasword encriptado con SHA1
 CREATE TABLE users (
   id INT(11) NOT NULL,
   username VARCHAR(16) NOT NULL,
