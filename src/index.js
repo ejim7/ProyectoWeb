@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 
 const { database } = require('./keys');
 
-// Intializations
+// Inicializar
 const app = express();
 require('./lib/passport');
 
@@ -59,7 +59,7 @@ app.use('/links', require('./routes/links'));
 // Public
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Starting
+// Start
 app.listen(app.get('port'), () => {
   console.log('Server is in port', app.get('port'));
 });
